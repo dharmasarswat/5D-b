@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const TaskSchema = mongoose.Schema(
   {
-    testName: {
+    taskName: {
       type: String,
       require: true,
     },
@@ -27,6 +27,8 @@ const TaskSchema = mongoose.Schema(
       type: String,
       require: true,
     },
+    status: String,
+    timeTaken: Number,
   },
   {
     timestamps: true,
